@@ -12,7 +12,7 @@ Please follow steps to update the code as per your account numbers/arn info at s
 
 1- In Lambda python code regionlist add all regions where you want this scan to happen
 
-2- Create or use existing SNS topic that can send you emails. And In Lambda python code replace SNS Topic ARN topicArn = 'arn:aws:sns:REGION:ACCOUNT NUMBER:NotifyMe'
+2- Create or use existing Slack app and collect the webhook url. And In Lambda python code replace the webhook url in line 24: ""https://hooks.slack.com/services/..."
 
 3- Create a Lambda Role with following permission and name it something like available-ip-single-account
 
